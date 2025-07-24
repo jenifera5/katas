@@ -24,9 +24,9 @@ class Temperatura{
           $farenheit = $celsius * 9 / 5 + 32;
 
           return match ($this->escala) {
-           "Celsius"  =>"Celsius:$this->valor Kelvin:" . round($kelvin, 2)." Farenheit:". round($farenheit, 2) ,
-           "kelvin"  => "Kelvin:$this->valor  Celsius:". round($celsius, 2)." Farenheit:". round($farenheit, 2),
-           "farenheit"=>"Farenheit:$this->valor  Celsius:". round($celsius, 2)." Kelvin:". round($kelvin, 2), 
+            "Celsius"=>"Celsius:$this->valor Kelvin:" . round($kelvin, 2)." Farenheit:". round($farenheit, 2),
+            "Kelvin"=>"Kelvin:$this->valor  Celcius:". round($celsius, 2)." Farenheit:". round($farenheit, 2) ,
+            "Farenheit"=>"Farenheit:$this->valor  Farenheit:". round($celsius, 2)." Kelvin:". round($kelvin, 2),
           };
       }
 
