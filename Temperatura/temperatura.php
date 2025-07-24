@@ -7,8 +7,6 @@ class Temperatura{
       {
             $this->valor = $valor;
             $this->escala = $escala;
-
-
       }
 
       public function convertir()
@@ -31,11 +29,6 @@ class Temperatura{
            "farenheit"=>"Farenheit:$this->valor  Farenheit:". round($celsius, 2)." Kelvin:". round($kelvin, 2), 
           };
       }
-
-
-
-
-
 
 
 
