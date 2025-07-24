@@ -26,7 +26,7 @@ class Temperatura{
           return match ($this->escala) {
             "Celsius"=>"Celsius:$this->valor Kelvin:" . round($kelvin, 2)." Farenheit:". round($farenheit, 2),
             "Kelvin"=>"Kelvin:$this->valor  Celcius:". round($celsius, 2)." Farenheit:". round($farenheit, 2) ,
-            "Farenheit"=>"Farenheit:$this->valor  Farenheit:". round($celsius, 2)." Kelvin:". round($kelvin, 2),
+            "Farenheit"=>"Farenheit:$this->valor  Celsius". round($celsius, 2)." Kelvin:". round($kelvin, 2),
           };
       }
 
